@@ -1,0 +1,21 @@
+public class Interface {
+
+    public void main(String[] args){
+
+        // Interface = A blueprint for a class that specifies a set of abstract methods
+        //                     that implementing classes MUST define.
+        //                     Supports multiple inheritance-like behavior.
+
+        Rabbit rabbit = new Rabbit();
+        Hawk hawk = new Hawk();
+        Fish fish = new Fish();
+
+        fish.flee();
+        fish.hunt();
+        rabbit.flee();
+        hawk.hunt();
+
+
+    }
+
+}
