@@ -19,8 +19,9 @@ public class Hangman_game {
             while((line = reader.readLine()) != null){
                 words.add(line.trim());
             }
-        }
-        catch(IOException e){
+        }catch(FileNotFoundException e){
+            System.out.println("Could not found the file");
+        }catch(IOException e){
             System.out.println("Something went wrong");
         }
 
